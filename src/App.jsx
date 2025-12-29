@@ -12,6 +12,9 @@ import PlaceholderPage from './pages/PlaceholderPage'
 import Roster from './pages/Roster'
 import InstructorLectures from './pages/InstructorLectures'
 import ClassDirectory from './pages/ClassDirectory'
+import CourseSettings from './pages/CourseSettings'
+import TeamMeetings from './pages/TeamMeetings'
+import AttendanceReports from './pages/AttendanceReports'
 
 function App() {
   return (
@@ -30,9 +33,9 @@ function App() {
         <Route path="/roster" element={<Roster />} />
         <Route path="/instructor-lectures" element={<InstructorLectures />} />
         <Route path="/class-directory" element={<ClassDirectory />} />
-        <Route path="/instructor-team-meetings" element={<PlaceholderPage title="Team Meetings" />} />
-        <Route path="/course-settings" element={<PlaceholderPage title="Course Settings" />} />
-        <Route path="/meeting-attendance" element={<PlaceholderPage title="Attendance Reports" />} />
+        <Route path="/instructor-team-meetings" element={<TeamMeetings />} />
+        <Route path="/course-settings" element={<CourseSettings />} />
+        <Route path="/meeting-attendance" element={<AttendanceReports />} />
         
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
